@@ -1,0 +1,53 @@
+@import "@/assets/styles/variables.scss";
+
+.menu {
+  @extend %flex-center-center;
+  flex-direction: column;
+
+  .menu__item {
+    width: 300px;
+    padding: 10px;
+    font-size: 14px;
+    color: $white;
+    background: $backg-input;
+    border: 2px solid $border-gray;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+    @extend %flex-center-between;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    .menu__id {
+      color: $red;
+    }
+
+    .menu__name {
+      color: $green;
+    }
+
+    .menu__type {
+      color: $yellow;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      outline: none;
+      border-color: $green;
+      background: $black;
+    }
+  }
+}
+
+/* 320 - 576 px */
+@media screen and (max-width: 576px) {
+  .menu {
+    .menu__item {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+$border-color: #000000;
+$backg-navbar: #18181b;
+$color-placehl: #ffffffb3;
+$backg-input: #1f1f23;
+$backg-green: #122119;
+$backg-yellow: #2b2700;
+$backg-violet: #241e2e;
+$border-gray: #3a3a3d;
+
+$violet: #772ce8;
+$black: #000;
+$white: #fff;
+$green: #25c06d;
+$gray: #808081;
+$yellow: #f9c50b;
+$blue: #42a0ff;
+$orange: #fc7e2f;
+$red: #f2323f;
+$dark: #2c2a25;
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+%flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

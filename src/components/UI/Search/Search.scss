@@ -1,0 +1,21 @@
+@import "@/assets/styles/variables.scss";
+
+.search {
+  padding: 15px 0px;
+  background: $backg-navbar;
+  font-size: 15px;
+
+  .container {
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .content__icon {
+        font-size: 28px;
+        margin-right: 8px;
+        color: $violet;
+      }
+    }
+  }
+}

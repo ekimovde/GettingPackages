@@ -1,0 +1,23 @@
+@import "@/assets/styles/variables.scss";
+
+.input {
+  width: 300px;
+  padding: 6px;
+  font-size: 13px;
+  font-family: "Rubik", sans-serif;
+  color: $white;
+  background: $backg-input;
+  border: 2px solid $border-gray;
+  font-weight: 500;
+  transition: all 0.2s ease;
+
+  &:focus {
+    outline: none;
+    border-color: $violet;
+    background: $black;
+  }
+
+  &::placeholder {
+    color: $color-placehl;
+  }
+}

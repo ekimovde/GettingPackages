@@ -1,0 +1,126 @@
+@import "@/assets/styles/variables.scss";
+
+.home {
+  margin-top: 50px;
+
+  .container {
+    .top {
+      @extend %flex-center-center;
+      flex-direction: column;
+
+      .top__header {
+        color: $green;
+
+        .top__block {
+          background-color: $backg-green;
+          padding: 10px;
+          border-radius: 6px;
+          @extend %flex-center;
+
+          .top__icon {
+            font-size: 20px;
+          }
+
+          .top__name {
+            margin-left: 8px;
+          }
+        }
+      }
+
+      .top__offer {
+        text-align: center;
+
+        .top__title {
+          color: $white;
+          margin-top: 20px;
+        }
+
+        .top__descr {
+          color: $gray;
+          width: 344px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .footer {
+      @extend %flex-center-center;
+      flex-direction: column;
+      margin-bottom: 50px;
+
+      .footer__image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: url("../../../assets/img/avatar.jpg") no-repeat;
+        background-size: auto 180px;
+        margin-bottom: 20px;
+      }
+
+      .footer__info {
+        @extend %flex-center-center;
+
+        .footer__link {
+          margin-right: 8px;
+          background-color: $backg-violet;
+          color: $violet;
+          padding: 6px 8px;
+          border-radius: 6px;
+          font-size: 20px;
+          height: 22px;
+        }
+
+        .footer__block {
+          padding: 8px 8px;
+          border-radius: 6px;
+          background-color: $backg-yellow;
+          color: $yellow;
+          @extend %flex-center;
+
+          .footer__icon {
+            font-size: 20px;
+          }
+
+          .footer__name {
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Media Queries */
+
+/* 576 - 768 px */
+@media screen and (max-width: 768px) {
+  .top__title {
+    font-size: 28px;
+  }
+}
+
+/* 320 - 576 px */
+@media screen and (max-width: 576px) {
+  .home {
+    .container {
+      .top {
+        .top__offer {
+          width: 100%;
+
+          .top__title {
+            font-size: 20px;
+            margin-bottom: 8px;
+          }
+
+          .top__descr {
+            width: 100%;
+          }
+        }
+      }
+
+      .footer__name {
+        font-size: 12px;
+      }
+    }
+  }
+}

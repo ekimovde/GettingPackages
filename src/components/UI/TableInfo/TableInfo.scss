@@ -1,0 +1,56 @@
+@import "@/assets/styles/variables.scss";
+
+.info {
+  color: $white;
+  background: $backg-input;
+  border: 2px solid $border-gray;
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px 10px;
+  @extend %flex-center-center;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .info__menu {
+    width: 300px;
+    margin-top: 8px;
+
+    .info__item {
+      text-align: center;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .info__text {
+        color: $red;
+      }
+    }
+  }
+}
+
+/* Media Queries */
+
+/* 576 - 768 px */
+@media screen and (max-width: 768px) {
+  .info {
+    width: 280px;
+
+    .info__menu {
+      width: 250px;
+    }
+  }
+}
+
+/* 320 - 576 px */
+@media screen and (max-width: 576px) {
+  .info {
+    width: 200px;
+
+    .info__menu {
+      font-size: 13px;
+      width: 150px;
+    }
+  }
+}

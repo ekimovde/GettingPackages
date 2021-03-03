@@ -1,0 +1,33 @@
+@import "@/assets/styles/variables.scss";
+
+.pagination {
+  @extend %flex-center-center;
+  margin-top: 25px;
+
+  .pagination__number {
+    font-weight: bold;
+    font-size: 18px;
+    color: $red;
+  }
+
+  .pagination__btn {
+    cursor: pointer;
+    color: $border-gray;
+
+    &:hover {
+      color: $orange;
+    }
+
+    &.pagination__btn_left {
+      margin-right: 2px;
+    }
+
+    &.pagination__btn_right {
+      margin-left: 2px;
+    }
+
+    .pagination__icon {
+      font-size: 30px;
+    }
+  }
+}
